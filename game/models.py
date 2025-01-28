@@ -15,3 +15,15 @@ class GameProgress(models.Model):
     progress_percentage = models.DecimalField(max_digits=5, decimal_places=2, default=0.0)
     completed = models.BooleanField(default=False)
 
+
+# Question Model
+class Question(models.Model):
+    """
+    A Django model representing a multiple-choice question.
+    """
+    
+    question_text = models.TextField()
+    option_1 = models.CharField(max_length=255)
+    option_2 = models.CharField(max_length=255)
+    option_3 = models.CharField(max_length=255)
+    correct_answer = models.CharField(max_length=255)
