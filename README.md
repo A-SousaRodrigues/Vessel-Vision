@@ -1,10 +1,8 @@
 # Vessel Vision
 
-![Vessel Vision - Project Banner]
-
 
 <p align="center">
-| <a href="" target="_blank">Live Project</a> |
+| <a href="https://vessel-vision-1ed5aef8a6ed.herokuapp.com/" target="_blank">Live Project</a> |
 </p>
 
 ## Introduction 
@@ -13,7 +11,7 @@ The Circle of Willis Learning Game is an interactive, educational platform desig
 
 The website will feature a responsive design to ensure usability on various devices and adhere to accessibility standards, making it inclusive for all users.
 
-The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
+The live project can be found here: <a href="https://vessel-vision-1ed5aef8a6ed.herokuapp.com/" target="_blank">Vessel Vision</a>
 
 <h2 align="center" id="TOC">Table of Contents</h2>
 
