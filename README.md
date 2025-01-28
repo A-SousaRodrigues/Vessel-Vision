@@ -78,7 +78,39 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
 
 ### User Stories 
 
+<details>
+  <summary>Must Have</summary>
 
+- As a user, I want to register for an account so that I can track my progress in the game.
+- As a user, I want to log in to my account so that I can continue my progress where I left off.
+- As a user, I want to view a question about the Circle of Willis so that I can test my knowledge.
+- As a user, I want to submit my answer and receive immediate feedback so that I can learn from my mistakes.
+- As a user, I want to see a summary of my performance after completing the game so that I know my strengths and weaknesses.
+- As a user, I want my progress to be saved as I play so that I can continue where I left off.
+- As a user, I want to see testimonials at the bottom of the homepage so that I can read other users' experiences.
+
+</details>
+
+<details>
+  <summary>Should Have</summary>
+
+- As a user, I want to see a visual progress bar so that I know how far I’ve progressed in the game.
+- As a user, I want to reset my progress so that I can start the game over from the beginning.
+- As a user, I want the game to adapt to different screen sizes so that I can play on both desktop and mobile devices.
+- As an admin, I want to moderate testimonials by approving or rejecting submissions so that the content remains appropriate.
+- As a user, I want to review the correct answers for each question after the game ends so that I can identify gaps in my knowledge.
+
+</details>
+
+<details>
+  <summary>Could Have</summary>
+
+- As a user, I want to see motivational feedback based on my performance so that I feel encouraged to improve.
+- As a user, I want to leave a testimonial without logging in so that I can quickly share my feedback.
+- As a user, I want to see random testimonials every time I visit the homepage so that I get a variety of opinions.
+- As a user, I want to read a brief explanation about each artery during the game so that I can learn more about the anatomy.
+
+</details>
 
 
 <hr>
@@ -90,9 +122,15 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
 
 ### Main Palette
 
+With the help of ChatGPT, acting my UX designer, the following colour pallete was decided.
 
+- Primary Colour	Strong Blue	(#0077B6)	
+- Secondary Colour	Dark Blue	(#005F80)	
+- Accent Colour	Medium Green	(#4CAF50)	
+- Text Colour	Very Dark Gray	(#212121)	
+- Background Colour	Off-White	(#F4F4F4)	
 
-
+![Color Palette](/documentation/images/pallete.png)
 <hr>
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
 
