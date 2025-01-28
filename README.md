@@ -38,9 +38,7 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
 * [AI Implementation and Orchestration](#ai-implementation-and-orchestration)
 * [Credits](#credits)
   - [Code](#code)
-  - [Content Research](#content-research)
-  - [Media](#media)
-  - [Acknowledgements](#acknowledgements)
+  - [Content](#content)
 
 
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
@@ -332,10 +330,11 @@ The use of AI tools significantly sped up the development process by automating 
 
 ### Code
 
+Authorisation templates used the same as the Codestar Blog in the LMS, but customised to fit this project.
+AI was heavily used to create models, views and templates.
 
-
-### Media
-
+### Content
+Questions suggested by AI, refined and corrceted by me.
 
 <hr>
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
