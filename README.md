@@ -235,15 +235,38 @@ Wireframes designed by ChatGPT
 
 ### Technologies and Languages
 
+![Static Badge](https://img.shields.io/badge/HTML5-language-red)
+![Static Badge](https://img.shields.io/badge/CSS3-language-%23663399)
+![Static Badge](https://img.shields.io/badge/Javascript-language-yellow)
+![Static Badge](https://img.shields.io/badge/Python-language-blue)
 
+![Static Badge](https://img.shields.io/badge/Heroku-deployment-%2379589f)
+![Static Badge](https://img.shields.io/badge/GitHub-repo_hosting-black)
+![Static Badge](https://img.shields.io/badge/VS_Code-IDE-yellow)
+
+![Static Badge](https://img.shields.io/badge/PostgreSQL-DBMS-blue)
 
 ### Libraries and Frameworks
 
+![Static Badge](https://img.shields.io/badge/Bootstrap-frontend_dev_framework-purple)
+![Static Badge](https://img.shields.io/badge/FontAwesome-icon_library-navy)
+![Static Badge](https://img.shields.io/badge/GoogleFonts-typography_library-blue)
 
+![Static Badge](https://img.shields.io/badge/Django-web_framework-%green)
+![Static Badge](https://img.shields.io/badge/Django_AllAuth-authentication_package-%green)
+![Static Badge](https://img.shields.io/badge/Django_Whitenoise-static_file_serving_package-%green)
+![Static Badge](https://img.shields.io/badge/Django_Summernote-rich_text_editor_package-%green)
+
+All Django packages installed are listed in grequirements.txt
 
 ### Tools and Programs
 
+![Static Badge](https://img.shields.io/badge/Favicon.io-icons-red)
+![Static Badge](https://img.shields.io/badge/Coolers-colour_palette_testing-red)
 
+![Static Badge](https://img.shields.io/badge/MSCopilot-AI-blue)
+![Static Badge](https://img.shields.io/badge/ChatGPT-AI-blue)
+![Static Badge](https://img.shields.io/badge/GitHubCopilot-AI_pair_programming-blue)
 
 <hr>
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
