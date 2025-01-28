@@ -1,11 +1,16 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
-from .models import GameProgress, Question
+from .models import GameProgress, Question, Testimonial
 from django.contrib.auth.models import User
 
 # Display the home page
 def index(request):
-    return render(request,"game/index.html")
+    """
+    Home page view with a testimonials carousel.
+    """
+    testimonials = Testimonial.objects.filter(approved=True).order_by('-date_submitted')
+    return render(request, 'game/index.html', {'testimonials': testimonials})
+
 
 # Display the first question or the current question
 def game_view(request):
