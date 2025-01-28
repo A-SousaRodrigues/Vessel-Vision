@@ -27,3 +27,13 @@ class Question(models.Model):
     option_2 = models.CharField(max_length=255)
     option_3 = models.CharField(max_length=255)
     correct_answer = models.CharField(max_length=255)
+
+# Score Model
+class Score(models.Model):
+    """
+    A model representing a user's score in the game related to :model:`auth.User`.
+    """
+
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    score = models.IntegerField()
+    date_completed = models.DateTimeField(auto_now_add=True)
