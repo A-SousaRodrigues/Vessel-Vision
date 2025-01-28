@@ -250,7 +250,15 @@ Wireframes designed by ChatGPT
 
 ## Deployment
 
-
+- **Platform:** Heroku
+- **High-Level Deployment Steps:** 
+  1. Clone the repository
+  2. Set up the Heroku environment with a PostgreSQL database.
+  3. Configure environment variables for sensitive data (e.g., secret keys).
+  4. Deploy using Heroku Git or GitHub integration.
+- **Security Measures:**
+  - Sensitive data is stored in environment variables.
+  - DEBUG mode is disabled in the production environment to enhance security.
 
 
 <hr>
@@ -263,17 +271,10 @@ Wireframes designed by ChatGPT
 #### CSS
 
 
-![CSS Validation]
-
 #### HTML
 
-No errors found.
-
-![HTML Validation]
 
 ### Lighthouse
-
-
 
 
 <hr>
