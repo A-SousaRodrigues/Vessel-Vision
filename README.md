@@ -35,6 +35,7 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
   - [Tools & Programs](#tools-and-programs)
 * [Development](#deployment)
 * [Testing](#testing)
+* [AI Implementation and Orchestration](#ai-implementation-and-orchestration)
 * [Credits](#credits)
   - [Code](#code)
   - [Content Research](#content-research)
@@ -299,6 +300,30 @@ All Django packages installed are listed in grequirements.txt
 
 ### Lighthouse
 
+
+<hr>
+<p align="right"><a href="#vessel-vision">Back To Top</a></p>
+
+## AI Implementation and Orchestration
+
+### Use Cases and Reflections:
+
+  - **Code Creation:** 
+    - Reflection: The AI implementation in code creation played a significant role in accelerating development. By automating repetitive tasks and providing code suggestions, AI tools helped maintain focus on higher-level design decisions, including accessibility and inclusivity. This was especially valuable for creating flexible and scalable models and views for the application.
+    - Examples: AI was used to generate base code for models, views, and URLs, allowing myself to focus on refining functionality rather than writing boilerplate code.
+  - **Debugging:** 
+    - Reflection:  AI tools were invaluable during debugging, offering automated solutions to common errors and logic issues. While AI suggestions provided a solid foundation, manual refinement ensured that the implementation was aligned with the project's objectives. By reducing the time spent on resolving minor errors, AI enabled a more efficient debugging process.
+  - **Performance and UX Optimisation:** 
+    - Reflection: AI-assisted tools contributed to enhancing the performance of the application by suggesting ways to optimise database queries and reduce the load on the server. The optimisation suggestions also helped enhance the user experience (UX) by ensuring smoother transitions and faster response times, which is especially beneficial for users with SEND or ALN.
+  - **Automated Unit Testing:**
+    - Reflection: 
+
+- **Overall Impact:**
+  - Efficiency Gains:
+The use of AI tools significantly sped up the development process by automating repetitive tasks such as code generation, debugging, and unit testing. AI also provided valuable insights into improving performance and user experience, allowing developers to focus on creating high-quality features.
+
+  - Challenges:
+  Contextual Adjustments: One of the challenges faced during AI implementation was ensuring that the suggestions provided by AI were fully aligned with the specific project requirements. While AI-generated solutions were often useful, manual adjustments were necessary to adapt them to the project’s unique needs and the desired user experience.
 
 <hr>
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
