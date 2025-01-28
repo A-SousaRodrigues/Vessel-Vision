@@ -26,7 +26,6 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
     - [User Stories](#user-stories)
     - [Colors](#colors)
     - [Fonts](#fonts)
-    - [Imagery](#imagery)
     - [Wireframes](#wireframes)
 * [Features](#features)
   - [General Features](#general-features)
@@ -148,24 +147,66 @@ Similar to colour, the font should be easy to read. [Google Fonts](https://fonts
 
 ### Wireframes
 
- 
+Wireframes designed by ChatGPT
 
-**Mobile Wireframe**
+**Homepage Layout**
 
-![Mobile Wireframe]
+-----------------------------------
+| Logo | Home | Game | Testimonials | Login/Sign Up |
+-----------------------------------
+| Banner (Circle of Willis Image)                     |
+| "Explore the Circle of Willis – A Fun Way to Learn!" |
+| [Start the Game]                                    |
+-----------------------------------
+| About the Game (Description, Benefits)              |
+-----------------------------------
+| Testimonials Carousel                               |
+| [User 1 feedback] [User 2 feedback] ...              |
+-----------------------------------
+| Footer                                              |
+| Privacy | Terms | Contact                           |
+| Social Media Icons                                  |
+-----------------------------------
 
-**Tablet Wireframe**
+**Game Page Layout**
 
-![Tablet Wireframe]
+----------------------------------------------------------
+| Logo | Home | Game | Testimonials | Logout |
+----------------------------------------------------------
+| Circle of Willis Map (Interactive)                     |
+| [Highlighted arteries based on progress]               |
+----------------------------------------------------------
+| Question: What artery branches off the vertebral?      |
+| [ ] A) Internal Carotid                                |
+| [ ] B) Anterior Spinal Artery                          |
+| [ ] C) Posterior Cerebral Artery                       |
+| [Submit Answer]                                        |
+----------------------------------------------------------
+| Progress: 4/10 [|||||---] Score: 6/10                 |
+----------------------------------------------------------
+| Feedback: Correct! The Anterior Spinal Artery...       |
+----------------------------------------------------------
 
-**Desktop Wireframes**
+**Testimonial Page Layout**
 
-![Desktop Wireframe 1]
+----------------------------------------------------------
+| Logo | Home | Game | Testimonials | Logout |
+----------------------------------------------------------
+| Submit a Testimonial                                   |
+| [Text Box for feedback]                                |
+| [Star Rating System]                                   |
+| [Submit Button]                                        |
+----------------------------------------------------------
+| Testimonials List                                      |
+| User 1: "Great game! Learned a lot!" ⭐⭐⭐⭐⭐            |
+| User 2: "Nice interactive learning tool." ⭐⭐⭐⭐         |
+| [View More Testimonials]                               |
+----------------------------------------------------------
+
 
 <hr>
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
 
-## Imagery
 
 
 <hr>
