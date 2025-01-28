@@ -1,64 +1,77 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth.decorators import login_required
-from .models import GameProgress, Question, Score
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
+from .models import GameProgress, Question
+from django.contrib.auth.models import User
 
-# Game Views
+# Display the home page
+def index(request):
+    return render(request,"game/index.html")
 
-@login_required
+# Display the first question or the current question
 def game_view(request):
-    """
-    Displays the current question and tracks the user's progress.
-    """
-    # Get the user's current game progress
+    # Get or create the game progress for the user
     game_progress, created = GameProgress.objects.get_or_create(user=request.user)
-    
-    # Get the current question based on the user's progress
-    current_question = game_progress.current_question
-    question = Question.objects.all()[current_question] if current_question < Question.objects.count() else None
-    
-    if not question:
+
+    # If the game is completed, redirect to the summary view
+    if game_progress.completed:
         return redirect('game_summary')
-    
-    return render(request, 'game/game_view.html', {'question': question})
 
-@login_required
-def process_answer(request):
-    game_progress = GameProgress.objects.get(user=request.user)
+    # Fetch the current question
+    current_question_id = game_progress.current_question
+    question = get_object_or_404(Question, id=current_question_id + 1)
 
-    # Get the current question
-    question = Question.objects.get(id=game_progress.current_question)
-
-    # Check if the answer is correct
-    user_answer = request.POST.get('answer')
-    if user_answer == question.correct_answer:
-        game_progress.score += 1
-
-    # Update the user's progress
-    game_progress.current_question += 1
-    game_progress.save()
-
-    # Prepare the response: Either show the next question or end the game
-    if game_progress.current_question < Question.objects.count():
-        next_question = Question.objects.all()[game_progress.current_question]
-        return JsonResponse({'next_question': next_question.question_text})
-    else:
-        return JsonResponse({'next_question': None})
-
-@login_required
-def game_summary(request):
-    """
-    Displays a summary of the user's performance in the game.
-    """
-    game_progress = GameProgress.objects.get(user=request.user)
-    
-    # Save score and summary after game completion
-    Score.objects.create(user=request.user, score=game_progress.score)
-    
-    return render(request, 'game/game_summary.html', {
-        'score': game_progress.score,
-        'progress_percentage': game_progress.progress_percentage
+    return render(request, 'game/game_view.html', {
+        'question': question,
+        'game_progress': game_progress,
     })
 
+# Process the submitted answer
+def process_answer(request):
+    if request.method == 'POST':
+        user_answer = request.POST.get('answer')
 
+        # Get or create the game progress for the user
+        game_progress, created = GameProgress.objects.get_or_create(user=request.user)
 
+        # Fetch the current question
+        current_question_id = game_progress.current_question
+        question = get_object_or_404(Question, id=current_question_id + 1)
+
+        # Check if the user's answer is correct
+        if user_answer and user_answer.lower().strip() == question.correct_answer.lower().strip():
+            game_progress.score += 1
+
+        # Update progress
+        game_progress.current_question += 1
+
+        # Check if the game is complete
+        if game_progress.current_question >= Question.objects.count():
+            game_progress.completed = True
+        game_progress.save()
+
+        # Redirect to the next question or summary
+        if not game_progress.completed:
+            return redirect('game_view')
+        else:
+            return redirect('game_summary')
+
+    return redirect('game_view')
+
+# Display the game summary
+def game_summary(request):
+    # Get the user's game progress
+    game_progress = get_object_or_404(GameProgress, user=request.user)
+
+    return render(request, 'game_summary.html', {
+        'game_progress': game_progress,
+    })
+
+# Reset the game
+def reset_game(request):
+    game_progress = get_object_or_404(GameProgress, user=request.user)
+    game_progress.current_question = 0
+    game_progress.score = 0
+    game_progress.progress_percentage = 0.0
+    game_progress.completed = False
+    game_progress.save()
+    return redirect('game_view')
