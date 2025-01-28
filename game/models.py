@@ -37,3 +37,21 @@ class Score(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     score = models.IntegerField()
     date_completed = models.DateTimeField(auto_now_add=True)
+
+
+from django.db import models
+
+
+class Testimonial(models.Model):
+    """
+    A model to store testimonials for the website.
+    """
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    name = models.CharField(max_length=100, blank=True, null=True, help_text="Name of the user providing the testimonial.")
+    testimonial_text = models.TextField(help_text="The testimonial content.")
+    date_submitted = models.DateTimeField(auto_now_add=True)
+    approved = models.BooleanField(default=False, help_text="Only approved testimonials are shown.")
+
+    def __str__(self):
+        return self.testimonial_text[:50]  # Show first 50 characters in the admin panel
+
