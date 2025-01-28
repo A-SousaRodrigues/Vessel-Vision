@@ -2,5 +2,36 @@
 
 {% block content %}
 
+<div class="container mt-5">
+    <h3 class="text-center mb-4">Testimonials</h3>
 
+    <!-- Testimonials Carousel -->
+    {% if testimonials %}
+        <div id="testimonialsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                {% for testimonial in testimonials %}
+                    <div class="carousel-item {% if forloop.first %}active{% endif %}">
+                        <div class="d-flex flex-column align-items-center">
+                            <p class="text-center fst-italic">"{{ testimonial.testimonial_text }}"</p>
+                            {% if testimonial.name %}
+                                <small class="text-muted">- {{ testimonial.name }}</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+            <!-- Controls -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    {% else %}
+        <p class="text-center">No testimonials available at the moment.</p>
+    {% endif %}
+</div>
 {% endblock %}
