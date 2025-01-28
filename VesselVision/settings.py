@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-&5c7@xf-k%e3t!xagk#j1(4%v2zqb$vx=1@dqu2*0=frx88y#g
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["vessel-vision-1ed5aef8a6ed.herokuapp.com"]
 
 CSRF_TRUSTED_ORIGINS = ['https://*.codeinstitute-ide.net', 'https://*.herokuapp.com']
 
