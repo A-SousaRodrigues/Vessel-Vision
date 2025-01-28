@@ -122,7 +122,7 @@ The live project can be found here: <a href="" target="_blank">Vessel Vision</a>
 
 ### Main Palette
 
-With the help of ChatGPT, acting my UX designer, the following colour pallete was decided.
+With the help of ChatGPT, acting as my UX designer, the following colour pallete was decided.
 
 - Primary Colour	Strong Blue	(#0077B6)	
 - Secondary Colour	Dark Blue	(#005F80)	
@@ -135,6 +135,11 @@ With the help of ChatGPT, acting my UX designer, the following colour pallete wa
 <p align="right"><a href="#vessel-vision">Back To Top</a></p>
 
 ## Fonts
+
+Similar to colour, the font should be easy to read. [Google Fonts](https://fonts.google.com) using a direct import code within the style.css file should supply the fonts.
+
+[Roboto](https://fonts.google.com/specimen/Roboto) for body text.
+[Lato](https://fonts.google.com/specimen/Lato) for headings.
 
 
 
